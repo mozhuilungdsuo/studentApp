@@ -1,0 +1,22 @@
+<ion-content color="success">
+  <ion-row class="ion-justify-content-center">
+    <ion-card style="margin-top: 10rem">
+      <ion-card-header> </ion-card-header>
+
+      <ion-card-content>
+        <form [formGroup]="form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" />
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input  matInput  formControlName="password" type="password" />
+          </mat-form-field>
+          <button mat-raised-button color="primary" (click)='onSubmit()'>Login</button>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </ion-row>
+</ion-content>
